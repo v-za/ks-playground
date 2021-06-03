@@ -41,7 +41,6 @@
     "css-loader": "^5.2.6",
     "dotenv": "^9.0.2",
     "express": "^4.17.1",
-    "fsevents": "^1.2.9",
     "html-webpack-plugin": "^5.3.1",
     "image-webpack-loader": "^7.0.1",
     "kafka-socks": "^0.1.10",
