@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "/client/index.jsx",
+  "engines": {
+    "node": "14.15.5"
+  },
   "scripts": {
     "dev": "react-scripts start",
     "start": "serve -s build",
