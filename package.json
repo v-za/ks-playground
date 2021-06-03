@@ -28,7 +28,6 @@
     "@mdi/js": "^5.9.55",
     "@mdi/react": "^1.5.0",
     "@teamsupercell/typings-for-css-modules-loader": "^2.5.1",
-    "@types/node": "^15.6.1",
     "@types/react": "^17.0.8",
     "@types/react-dom": "^17.0.5",
     "@types/react-scroll": "^1.8.2",
@@ -51,6 +50,7 @@
     "path": "^0.12.7",
     "peer": "^0.6.1",
     "react": "^17.0.2",
+    "@types/node": "^15.12.0",
     "react-chartjs-2": "^2.11.2",
     "react-dom": "^17.0.2",
     "react-scroll": "^1.8.2",
@@ -66,5 +66,9 @@
     "webpack-cli": "^4.7.0"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^15.12.0",
+    "webpack-dev-server": "^3.11.2"
+  }
 }
