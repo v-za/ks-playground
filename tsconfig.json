@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "jsx": "react",
+    "target": "esnext",
+    "module": "commonJS",
+    "moduleResolution": "node",
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "watch": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+  },
+  "include": ["client/components", "client/custom.d.ts", "server/**/*"],
+  "exclude": ["../kafka-socks", "../example", "../lib", "node_modules"]
+}
