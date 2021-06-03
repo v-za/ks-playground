@@ -11,7 +11,7 @@
     "__dev-mac-only__": "cross-env NODE_ENV=development webpack serve --open && NODE_ENV=development nodemon server/server.ts",
     "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open\" \"nodemon server/server.ts\"",
     "components": "webpack serve --open",
-    "postinstall": "tsc"
+    "__postinstall": "tsc"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.4",
