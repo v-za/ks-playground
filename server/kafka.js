@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+exports.kafka = void 0;
+var kafka_socks_1 = require("kafka-socks");
+// import Confluent from "./../../kafka-socks/Confluent";
+require('dotenv').config();
+var API_KEY = "YA46J4FQIQRYNZY3";
+var API_SECRET = "sbzVVNfzXWR5o296sd9MlNvoZoYFGIBa4dJMj/RJiRa7awkH2lD9IluziRdjQR8S";
+var KAFKA_BOOTSTRAP_SERVER = "pkc-lzvrd.us-west4.gcp.confluent.cloud:9092";
+var kafka = new kafka_socks_1.Confluent(API_KEY, API_SECRET, KAFKA_BOOTSTRAP_SERVER).create("client-id");
+exports.kafka = kafka;
