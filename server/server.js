@@ -16,7 +16,7 @@ var kafka_socks_2 = require("kafka-socks");
 var app = express();
 var server = http.createServer(app);
 var io = new Server(server);
-var PORT = 3001;
+var PORT = process.env.PORT || 3001;
 var producer_1 = require("./producer");
 var kafka_1 = require("./kafka");
 require('dotenv').config();
