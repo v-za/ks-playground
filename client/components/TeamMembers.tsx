@@ -10,7 +10,7 @@ interface Props {
     name: string,
     linkedIn: string,
     github: string,
-    photo: string
+    image: string
   }
 }
 
@@ -43,7 +43,7 @@ const TeamMember: FC<Props> = ({
               paddingBottom: '1vh',
               borderRadius: '50%',
             }}
-            src={details.photo}
+            src={details.image}
           />
         </Typography>
         <Typography color="textPrimary" align="center" gutterBottom>

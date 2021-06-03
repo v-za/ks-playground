@@ -59,14 +59,14 @@ var useStyles = core_1.makeStyles(function (theme) { return core_1.createStyles(
         fontWeight: 900
     }
 }); });
-var logo = require('./assets/logo.svg')["default"];
+// const logo = require('./assets/logo.svg').default;
 // playground\client\assets\ks-logo-full.svg
 var App = function () {
     var classes = useStyles();
     return (<core_1.Container className={classes.topContainer} maxWidth='lg'>
       <NavBar_1["default"] />
       <core_1.Container className={classes.titleBox} component={react_scroll_1.Element} name='top'>
-        <img alt="mainLogo" style={{ height: '45vh', paddingBottom: '5vh' }} src={logo}/>
+        <img alt="mainLogo" style={{ height: '45vh', paddingBottom: '5vh' }} src={'https://svgshare.com/i/Xs1.svg'}/>
         <core_1.Typography className={classes.bold} variant="h3" align="center" color="textSecondary" gutterBottom>
           Kafka Socks
           </core_1.Typography>
