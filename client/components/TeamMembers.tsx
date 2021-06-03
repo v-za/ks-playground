@@ -1,6 +1,6 @@
  import React, { FC } from 'react';
 import {
-  makeStyles, createStyles, Card, CardContent, Typography,
+  makeStyles, createStyles, Card, CardContent, Typography, Img
 } from '@material-ui/core';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
@@ -36,7 +36,7 @@ const TeamMember: FC<Props> = ({
     <Card className={classes.root}>
       <CardContent>
         <Typography align="center">
-          <img
+          <Img
             alt="profilePhoto"
             style={{
               height: '12vh',
