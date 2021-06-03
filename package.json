@@ -2,14 +2,15 @@
   "name": "demo",
   "version": "1.0.0",
   "description": "",
-  "main": "/client/index.jsx",
+  "main": "/client/index.tsx",
   "engine": {
-    "node": "14.15.5"
+    "node": "16.0.0",
+    "npm": "6.14.4"
   },
   "scripts": {
     "__test__": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "node server/server.js",
+    "start": "NODE_ENV=production node server/server.js",
     "go": "npm run build && npm start",
     "__dev-mac-only__": "cross-env NODE_ENV=development webpack serve --open && NODE_ENV=development nodemon server/server.ts",
     "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open\" \"nodemon server/server.ts\"",
@@ -30,7 +31,7 @@
     "express": "^4.17.1",
     "html-webpack-plugin": "^5.3.1",
     "kafka-socks": "^0.1.10",
-    "node": "^14.15.5",
+    "node": "^16.0.0",
     "node-gyp": "^8.0.0",
     "nodemon": "^2.0.7",
     "path": "^0.12.7",
