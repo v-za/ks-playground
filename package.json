@@ -9,13 +9,14 @@
   "scripts": {
     "__test__": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack && node server/server.js --open",
+    "start": "node server/server.js",
     "go": "npm run build && npm start",
     "__dev-mac-only__": "cross-env NODE_ENV=development webpack serve --open && NODE_ENV=development nodemon server/server.ts",
     "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open\" \"nodemon server/server.ts\"",
     "components": "webpack serve --open",
     "__postinstall": "tsc"
   },
+  "heroku-run-build-script": true,
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
