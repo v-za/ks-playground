@@ -4,14 +4,12 @@
   "description": "",
   "main": "/client/index.jsx",
   "scripts": {
-    "__test__": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack",
-    "start": "node server/server.js --open",
-    "go": "npm run build && npm start",
-    "__dev-mac-only__": "cross-env NODE_ENV=development webpack serve --open && NODE_ENV=development nodemon server/server.ts",
-    "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open\" \"nodemon server/server.ts\"",
-    "components": "webpack serve --open",
-    "__postinstall": "tsc"
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@material-ui/core": "^4.11.4",
@@ -36,6 +34,7 @@
     "react-dom": "^17.0.2",
     "react-scroll": "^1.8.2",
     "react-syntax-highlighter": "^15.4.3",
+    "serve": "^11.3.2",
     "socket.io": "^4.1.2",
     "socket.io-client": "^4.1.2",
     "style-loader": "^2.0.0",
