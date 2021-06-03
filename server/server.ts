@@ -38,13 +38,13 @@ app.get("/", (req: any, res: any) => {
   // res.sendFile("index.html");
 });
 
-
+const timestamp = new Date().getUTCMilliseconds();
 
 const kafkaconsumer_1 = kafka.consumer({
-  groupId: 'truck-group-1'
+  groupId: `truck-group-1-${timestamp}`
 })
 const kafkaconsumer_2 = kafka.consumer({
-  groupId: 'truck-group-2'
+  groupId: `truck-group-2-${timestamp}`
 })
 
 //const consumer_1 = new Consumer(kafkaconsumer_1, 'trucks-topic-1'<--related to Kafka (what topic should the consumer subscribe to), `truck message-1`<-- socketio (what event should it emit)) //
