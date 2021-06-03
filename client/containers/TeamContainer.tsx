@@ -26,25 +26,25 @@ const TeamContainer: FC = () => {
     name: 'Vinit Patel',
     linkedIn: 'https://www.linkedin.com/in/vinit-za/',
     github: 'https://github.com/v-za',
-    photo: require('./../assets/vinit.jpeg'),
+    image: 'https://svgshare.com/i/Xqz.svg',
   };
   const allison = {
     name: 'Allison Jacobs',
     linkedIn: 'https://www.linkedin.com/in/allison-j/',
     github: 'https://github.com/allisonIsCoding',
-    photo: require('./../assets/allison.jpg'),
+    image: 'https://svgshare.com/i/Xri.svg',
   };
   const jenessa  = {
     name: 'Jenessa Chapalamadugu',
     linkedIn: 'https://www.linkedin.com/in/jenessachap/',
     github: 'https://github.com/jenessachap',
-    photo: require('./../assets/jenessa.jpg'),
+    image: 'https://svgshare.com/i/Xr8.svg',
   };
   const jason = {
     name: 'Jason Fricano',
     linkedIn: 'https://www.linkedin.com/in/jasonfricano/',
     github: 'https://github.com/jfricano',
-    photo: require('./../assets/jason.jpg'),
+    image: 'https://svgshare.com/i/Xrr.svg',
   };
 
   const classes = useStyles();

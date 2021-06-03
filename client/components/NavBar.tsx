@@ -13,7 +13,7 @@ import {
 } from '@material-ui/core';
 import { Link } from 'react-scroll';
 
-const miniLogo = require('../assets/KSminiLogo.svg').default;
+// const miniLogo = require('../assets/KSminiLogo.svg');
 // playground\client\assets\ks-logo-full.svg
 
 const useStyles = makeStyles((theme: Theme) =>
@@ -61,7 +61,7 @@ const NavBar: FC = () => {
         <Toolbar className={classes.landingButtons}>
           <IconButton className={classes.button}>
             <Icon component={Link} to="top" activeClass="active" spy smooth>
-              <img alt="miniNavLogo" style={{ width: '98%' }} src={ miniLogo }/>
+              <img alt="miniNavLogo" style={{ width: '98%' }} src={ 'https://svgshare.com/i/XsB.svg' }/>
             </Icon>
           </IconButton>
           <Button

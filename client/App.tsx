@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme: Theme) => createStyles({
   }
 }))
 
-const logo = require('./assets/logo.svg').default;
+// const logo = require('./assets/logo.svg').default;
 // playground\client\assets\ks-logo-full.svg
 const App: FC = () => {
   const classes = useStyles();
@@ -71,7 +71,7 @@ const App: FC = () => {
     <Container className={classes.topContainer} maxWidth='lg'>
       <NavBar />
       <Container className={classes.titleBox} component={Element} name='top' >
-        <img alt="mainLogo" style={{ height: '45vh', paddingBottom: '5vh' }} src={ logo }/>
+        <img alt="mainLogo" style={{ height: '45vh', paddingBottom: '5vh' }} src={ 'https://svgshare.com/i/Xs1.svg' }/>
         <Typography className={ classes.bold }
           variant="h3"
           align="center"

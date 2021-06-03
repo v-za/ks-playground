@@ -30,6 +30,7 @@ require('dotenv').config();
 // const port = 3001;
 
 app.use(require("cors")());
+// app.use(express.static('../client/assets'));
 
 app.use('/dist', express.static(path.join(__dirname, '../dist')));
 
