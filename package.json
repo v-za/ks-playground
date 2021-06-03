@@ -10,7 +10,7 @@
   "scripts": {
     "__test__": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "NODE_ENV=production node server/server.js",
+    "start": "ts-node server/server.ts",
     "go": "npm run build && npm start",
     "__dev-mac-only__": "cross-env NODE_ENV=development webpack serve --open && NODE_ENV=development nodemon server/server.ts",
     "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open\" \"nodemon server/server.ts\"",
