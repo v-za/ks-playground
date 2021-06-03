@@ -25,12 +25,13 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif)$/i,
+        test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
+          'file-loader',
           {
-            loader: 'file-loader',
+            loader: 'image-webpack-loader',
             options: {
-              esModule: false,
+              disable: true, // webpack@2.x and newer
             },
           },
         ],
