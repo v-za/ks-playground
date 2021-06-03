@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   //below production mode is not being used as of 2:30pm 5/19.
-  mode: 'development',
+  mode: 'production',
   entry: './client/index.tsx',
 
   module: {
@@ -25,7 +25,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
+        test: /\.(gif|png|jpe?g)$/i,
         use: [
           'file-loader',
           {
