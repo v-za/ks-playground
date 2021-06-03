@@ -13,5 +13,5 @@
     "noImplicitAny": false,
   },
   "include": ["client/components", "client/custom.d.ts", "server/**/*"],
-  "exclude": ["../kafka-socks", "../example", "../lib", "node_modules"]
+  "exclude": ["node_modules"]
 }
